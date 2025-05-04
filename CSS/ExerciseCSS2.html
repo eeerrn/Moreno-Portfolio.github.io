@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 : Lists</title>
+    
+    <style>
+      
+        .session-title {
+            font-style: italic;
+        }
+        .list-item {
+            font-weight: bold;
+        }
+        .sub-list {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        .important {
+            font-weight: bold;
+        }
+        #session1 h3,
+        #session2 h3 {
+            text-decoration: underline;
+        }
+
+         
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; color: red;">Winter and Snow Camping Safety for Scout Leaders</h1>
+    <h2 style="color: red;">Topics Covered</h2>
+
+    <div id="session1">
+        <h3 style="color: red;"><u>Session 1</u> - <span class="session-title">The Fun Stuff</span> - <i>In town, Saturday afternoon</i></h3>
+        <ol type="1">
+            <li class="list-item">Goals</li>
+            <li>Introductory remarks and outline of this course</li>
+            <li>Round Robin
+                <ul>
+                    <li>Clothing</li>
+                    <li>Sleeping materials:
+                        <ul class="sub-list">
+                            <li>Sleeping bags</li>
+                            <li>Sleeping pad; and,</li>
+                            <li>Other sleeping gear</li>
+                        </ul>
+                    </li>
+                    <li>Tents and other camp</li>
+                </ul>
+            </li>
+            <li>Trip planning</li>
+            <li>Winter driving</li>
+        </ol>
+    </div>
+
+    <div id="session2">
+        <h3 style="color: red;"><u>Session 2</u> - <span class="session-title">Serious Concerns</span> - <i>In town, Saturday afternoon</i></h3>
+        <ol>
+            <li class="list-item">Further Administrative Details</li>
+            <li>Overview of problems unique to winter and snow activities</li>
+            <li>Round Robin
+                <ul>
+                    <li>Minimum Impact Camping and Sanitation</li>
+                    <li>Snow travel and intro to
+                        <ul class="sub-list">
+                            <li>Skis</li>
+                            <li>Snowshoes</li>
+                            <li>Sleds</li>
+                        </ul>
+                    </li>
+                    <li>Weather - some considerations on how winter differs from summer trips
+                        <ul class="sub-list">
+                            <li class="important">Avalanche dangers</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Navigating - Special considerations in land navigation in winter conditions</li>
+            <li>Dealing with Winter Emergencies</li>
+            <li>Other Problems to Consider and Wrap-up of session</li>
+        </ol>
+    </div>
+</body>
+</html>

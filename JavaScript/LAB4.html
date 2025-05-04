@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body onload="multiplication()">
+    <div id="multipy"></div>
+    
+    <script>
+        function multiplication() {
+            let rows = prompt("Enter number of rows:");
+            let columns = prompt("Enter number of columns:");
+            
+            let table = "<table>";
+            
+            for (let i = 1; i <= rows; i++) {
+                table += "<tr>";
+                for (let j = 1; j <= columns; j++) {
+                    table += "<td>" + (i * j) + "</td>";
+                }
+                table += "</tr>";
+            }
+            
+            table += "</table>";
+            
+            document.getElementById("multipy").innerHTML = table;
+        }
+    </script>
+</body>
